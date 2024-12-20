@@ -1,2 +1,3 @@
 # Fake-Discord-Login
-This repo is an informational rerecreation of the Discord login page to warn people of phishing.
+This repository is an informational rerecreation of the Discord login page to warn people of phishing.
+I made this as a commission for a webinar.
