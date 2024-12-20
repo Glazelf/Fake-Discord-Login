@@ -3821,10 +3821,6 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   margin: 0
 }
 
-.react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__input input[type=time] {
-  -moz-appearance: textfield
-}
-
 .react-datepicker__input-time-container .react-datepicker-time__input-container .react-datepicker-time__delimiter {
   margin-left: 5px;
   display: inline-block
@@ -5886,8 +5882,6 @@ html:not(.visual-refresh).theme-dark.checked_f6cde8 {
   color: var(--white-500)
 }
 
-@value transitionDuration 200ms;
-
 div.modalRoot {
   position: relative;
   border-radius: 12px
@@ -7230,8 +7224,6 @@ div.modalHeader_c5e09c {
 .hljs-ansi-background-white {
   background-color: #fdf6e3
 }
-
-@use postcss-pxtorem;
 
 .markup_f8f345 {
   font-size: 1rem;
@@ -9406,8 +9398,6 @@ div.modalHeader_c5e09c {
   background-color: ButtonFace
 }
 
-@use postcss-pxtorem;
-
 .spinner_d8e2d0 {
   width: 100%;
   height: 100%
@@ -11390,7 +11380,6 @@ div.modalHeader_c5e09c {
   color: var(--header-primary);
   flex-grow: 0;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   word-break: break-word
@@ -11403,14 +11392,12 @@ div.modalHeader_c5e09c {
 .soundNameRefresh_f40049 {
   color: var(--header-primary);
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   word-break: break-word
 }
 
 .soundNameRefresh_f40049.hasEmoji_f40049 {
-  -webkit-line-clamp: 1;
   word-break: break-all
 }
 
@@ -16453,7 +16440,6 @@ span.clanTag_a31c43 {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2
 }
 
 .childButton_f45bfc {
@@ -16745,8 +16731,6 @@ span.clanTag_a31c43 {
   margin-top: 16px;
   font-weight: 400
 }
-
-@use postcss-pxtorem;
 
 .wrapper_f9f2ca {
   position: relative;
@@ -17059,7 +17043,6 @@ span.clanTag_a31c43 {
 
 .repliedTextPreview_f9f2ca .repliedTextContent_f9f2ca {
   display: -webkit-inline-box !important;
-  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-break: break-all;
   width: 100%
@@ -17769,8 +17752,6 @@ span.clanTag_a31c43 {
   width: 80px;
   height: 80px
 }
-
-@use postcss-pxtorem;
 
 .gameIcon_ed12a9 {
   margin-right: 4px;
@@ -20322,8 +20303,6 @@ span.clanTag_a31c43 {
   color: var(--status-danger)
 }
 
-@value maxModalWidth from './MarkdownModal.module.css';
-
 .video_f017d0 {
   border-radius: 3px
 }
@@ -21449,7 +21428,6 @@ h3.improved_f017d0:after {
 
 .guildNameTextLimitedSize_a6ae3c {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden
 }
@@ -21867,8 +21845,6 @@ h3.improved_f017d0:after {
 .content_e8db51 {
   flex: 1 1 auto
 }
-
-@value iconSize 20px;
 
 .visuallyHidden_d1ac9b {
   border: 0;
@@ -24065,8 +24041,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
   margin-bottom: 4px
 }
 
-@use postcss-pxtorem;
-
 .autocomplete_bea0d0 {
   border-radius: 5px;
   box-shadow: var(--shadow-border), var(--shadow-high);
@@ -26184,7 +26158,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .optionPillValue_d4df8b {
   display: block;
   padding: 1px 8px;
-  vertical-align: top;
   white-space: pre-wrap;
   flex: 1
 }
@@ -26293,8 +26266,6 @@ input[type=checkbox]:focus-visible+.label_d1ac9b {
 .enable-forced-colors .placeholder_e52116 {
   color: GrayText
 }
-
-@use postcss-pxtorem;
 
 .channelTextArea_bdf0de {
   position: relative;
@@ -29567,7 +29538,6 @@ div.popoutCloseButton_d523a2:hover {
 .clamp_c8ce83 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 9;
   overflow: hidden
 }
 
@@ -29796,14 +29766,6 @@ div.popoutCloseButton_d523a2:hover {
   font-size: 14px;
   word-wrap: break-word;
   word-break: break-word
-}
-
-.clamp_af9888 {
-  -webkit-line-clamp: 2
-}
-
-.unclamp_af9888 {
-  -webkit-line-clamp: 9
 }
 
 .placeholderWidth_af9888 {
@@ -30050,14 +30012,6 @@ div.popoutCloseButton_d523a2:hover {
 .coachmarkAnchor_a82ccc {
   position: absolute;
   pointer-events: none
-}
-
-.clamp_a82ccc {
-  -webkit-line-clamp: 2
-}
-
-.unclamp_a82ccc {
-  -webkit-line-clamp: 9
 }
 
 .placeholderWidth_a82ccc {
@@ -31765,7 +31719,6 @@ img.thumbnail_c64476 {
 .descriptionClamp_abaf7d {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
   overflow: hidden
 }
 
@@ -41228,12 +41181,6 @@ img.thumbnail_c64476 {
 }
 
 @supports(-webkit-appearance:-apple-pay-button) {
-
-  .ApplePayButton-module_apple-pay-button__l5g-d,
-  .ApplePayButton-module_apple-pay__gYjuP {
-    -webkit-appearance: -apple-pay-button
-  }
-
   .ApplePayButton-module_apple-pay-button__l5g-d {
     cursor: pointer;
     display: inline-block
