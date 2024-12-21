@@ -5,4 +5,6 @@ Input sent through the "login form" is sent to a Google Sheet. This Google Sheet
   
 It also has taught me a lot about data storage and usage on a static webpage as well as how bad Google App Script error messages are.  
 This approach to data storage allows me to read and write data to and from a "database" (Google Sheet) fairly dynamically on a static site.  
-I don't think this is realistic for any sort of production mostly due to the sheer amount of requests this would take to operate a database.
+I don't think this is realistic for any sort of production mostly due to the sheer amount of requests this would take to operate a database.  
+
+### Hosting this repository to GitHub Pages will make Microsoft, Google and possibly others flag your github.io domain as dangerous.
